@@ -38,7 +38,6 @@ function restoreFeedback() {
   if (!storedFeedback) return;
 
   try {
-    console.log('RESTORE');
     const { email, message } = JSON.parse(storedFeedback);
     emailInput.value = email;
     messageTextarea.value = message;
